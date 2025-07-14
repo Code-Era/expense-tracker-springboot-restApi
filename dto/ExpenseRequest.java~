@@ -1,0 +1,4 @@
+package com.codeera.expensetracker.dto;
+
+public class ExpenseRequest {
+}

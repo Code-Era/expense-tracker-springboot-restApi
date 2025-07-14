@@ -1,0 +1,6 @@
+package com.codeera.expensetracker.config;
+
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+
+public class TrackerAuthProvider extends UsernamePasswordAuthenticationToken {
+}

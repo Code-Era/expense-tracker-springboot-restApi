@@ -1,0 +1,11 @@
+package com.codeera.expensetracker.exception.common;
+
+public class ExceptionUtil {
+    public static void throwSaveFailed(String entityName) {
+        throw new SavedUserFailedException("Failed to save " + entityName + ". Please try again.");
+    }
+
+    public static DuplicateResourceException duplicate(String field, String value) {
+        return new DuplicateResourceException(field + " already exists: " + value);
+    }
+}

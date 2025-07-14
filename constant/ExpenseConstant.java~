@@ -1,0 +1,4 @@
+package com.codeera.expensetracker.constant;
+
+public class ExpenseConstant {
+}

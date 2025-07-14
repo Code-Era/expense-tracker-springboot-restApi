@@ -1,0 +1,40 @@
+package com.codeera.expensetracker.entity;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+@Entity
+@Table(name = "category")
+@Getter
+@Setter
+public class Cateogries {
+
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
+
+        @NotBlank(message = "Name is required")
+        private String title;
+
+
+        private String description;
+
+        private String createdAt;
+
+        private String createdBy ;
+
+        @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
+        @JsonIgnore
+        private List<Expense> expenses = new ArrayList<>();
+
+
+
+}

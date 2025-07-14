@@ -1,0 +1,5 @@
+package com.codeera.expensetracker.enums;
+
+public enum Category {
+    FOOD, RENT, GROCERY, MEDICAL, OTHER,HOUSING,ENTERTAINMENT,UTILITIES
+}

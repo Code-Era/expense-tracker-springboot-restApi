@@ -1,0 +1,20 @@
+package com.codeera.expensetracker.dto;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
+public class LoginResponseDto {
+
+    private String id;
+    private String token;
+
+    private String email;
+
+
+
+     private String role;
+}

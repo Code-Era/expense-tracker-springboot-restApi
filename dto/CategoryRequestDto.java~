@@ -1,0 +1,22 @@
+package com.codeera.expensetracker.dto;
+
+import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class CategoryRequestDto {
+
+
+    @NotBlank(message = "Title is required")
+    private String title;
+
+    @NotBlank(message = "Name is required")
+    private String name;
+
+    @NotBlank (message = "Description is required")
+    private String description;
+
+
+}

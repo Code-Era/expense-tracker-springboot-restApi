@@ -1,0 +1,4 @@
+package com.codeera.expensetracker.authExceptionHandler;
+
+public class JacksonConfig {
+}
